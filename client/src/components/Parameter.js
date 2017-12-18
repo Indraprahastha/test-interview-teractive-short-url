@@ -12,7 +12,7 @@ class Parameter extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      google: 'www.google.com'
+      // google: 'www.google.com'
     }
   }
 

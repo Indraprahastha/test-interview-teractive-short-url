@@ -63,7 +63,7 @@ class Enkripsi extends Component {
     if (JSON.stringify(this.props.sorturl) == '[]') {
       conditionShortUrl = null
     } else {
-      let base = 'localhost:3000/'
+      let base = 'teractive-short-url.s3-website-ap-southeast-1.amazonaws.com/'
       let sort = this.props.sorturl
       let gabung = base+sort
       conditionShortUrl = <div><div className="col-md-2">

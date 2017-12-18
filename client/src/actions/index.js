@@ -1,5 +1,5 @@
 import Axios from 'axios';
-const apiUrl = 'http://localhost:3005/short_url/'
+const apiUrl = 'http://35.198.253.186:3000/short_url/'
 
 export const addUrlSuccess = (data) => {
   return {
