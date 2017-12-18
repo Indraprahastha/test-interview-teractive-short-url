@@ -29,7 +29,12 @@ class Enkripsi extends Component {
   }
 
   inputurl () {
+    var url = this.state.originalurl;
+    var valid = /^((ftp|http|https):\/\/)?www\.([A-z]+)\.([A-z]{2,})/.test(url);
+
     if (this.state.originalurl == '') {
+
+    } else if (!valid) {
 
     } else {
       // alert('jalan')
