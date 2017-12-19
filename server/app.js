@@ -20,3 +20,5 @@ app.use('/short_url',short_url)
 
 app.listen(process.env.PORT || 3005, function(){
 })
+
+module.exports = app
