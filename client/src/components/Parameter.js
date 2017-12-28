@@ -19,7 +19,7 @@ class Parameter extends Component {
   componentWillMount () {
     let cekheader = window.location.pathname.split('/').join('')
     this.props.getUrl(cekheader).then(() => {
-      window.location = "http://"+this.props.originurl
+      window.location = this.props.originurl
     })
     // window.location = "http://"+this.props.originurl
     // this.setState(google: this.props.originurl, () => {

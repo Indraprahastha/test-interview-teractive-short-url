@@ -30,7 +30,7 @@ class Enkripsi extends Component {
 
   inputurl () {
     var url = this.state.originalurl;
-    var valid = /^((ftp|http|https):\/\/)?www\.([A-z]+)\.([A-z]{2,})/.test(url);
+    var valid = /(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9]\.[^\s]{2,})/.test(url);
 
     if (this.state.originalurl == '') {
 
@@ -63,7 +63,7 @@ class Enkripsi extends Component {
     if (JSON.stringify(this.props.sorturl) == '[]') {
       conditionShortUrl = null
     } else {
-      let base = 'teractive-short-url.s3-website-ap-southeast-1.amazonaws.com/'
+      let base = 'prahastha.cf/'
       let sort = this.props.sorturl
       let gabung = base+sort
       conditionShortUrl = <div><div className="col-md-2">
